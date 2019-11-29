@@ -30,7 +30,7 @@ def skill():
                             {
                                 "label": "첫번째 버튼",
                                 "action": "message",
-                                "messageText": "첫번쨰 버튼을 눌렀습니다."
+                                "webLinkUrl": "https://portal.azure.com"
                             }
                         ] 
                     }
