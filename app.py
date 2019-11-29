@@ -28,9 +28,12 @@ def skill():
                         },
                         "buttons": [
                             {
-                                "label": "첫번째 버튼",
-                                "action": "webLink",
-                                "webLinkUrl": "https://portal.azure.com"
+                                # "label": "첫번째 버튼",
+                                # "action": "webLink",
+                                # "webLinkUrl": "https://portal.azure.com"
+                                "label": "010-2500-1925에 전화걸기",
+                                "action": "phone",
+                                "phoneNumber": "010-2054-3247"
                             }
                         ] 
                     }
