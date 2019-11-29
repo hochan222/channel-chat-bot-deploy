@@ -12,37 +12,61 @@ def skill():
         "template": {
             "outputs": [
                 {
-                    # "simpleImage": {
-                    #     "imageUrl": "https://cf.festa.io/img/2019-11-14/791369de-e762-4cc1-a341-68ce8c4a467f.png",
-                    #     "altText": "HUFS 로고"
-                    # }
-                    "basicCard": {
-                        "title": "카드의 제목",
-                        "description": "상세 설명",
-                        "thumbnail": {
-                            "imageUrl":"https://cf.festa.io/img/2019-11-14/791369de-e762-4cc1-a341-68ce8c4a467f.png",
-                            "link": {
-                                "mobile": "https://naver.com",
-                                "android": "https:google.com"
-                            }
-                        },
-                        "buttons": [
-                            {
-                                # "label": "첫번째 버튼",
-                                # "action": "webLink",
-                                # "webLinkUrl": "https://portal.azure.com"
-                                "label": "010-2500-1925에 전화걸기",
-                                "action": "phone",
-                                "phoneNumber": "010-2054-3247"
-                            },
-                            {
-                                "label": "공유하기",
-                                "action": "share"
-                            }
-                        ] 
+                    "simpleText": {
+                        "text": "아래 노란 버튼이 퀵 리플라이스"
                     }
                 }
+            ],
+            "quickReplies": [
+                {
+                    "label": "퀵플라이1",
+                    "action": "message",
+                    "messageText": "퀵플라이1 응답메세지"
+                },
+                {
+                    "label": "퀵플라이2",
+                    "action": "message",
+                    "messageText": "퀵플라이2 응답메세지"
+                },
+                {
+                    "label": "퀵플라이3",
+                    "action": "message",
+                    "messageText": "퀵플라이3 응답메세지"
+                }
             ]
+            # "outputs": [
+            #     {
+            #         # "simpleImage": {
+            #         #     "imageUrl": "https://cf.festa.io/img/2019-11-14/791369de-e762-4cc1-a341-68ce8c4a467f.png",
+            #         #     "altText": "HUFS 로고"
+            #         # }
+            #         "basicCard": {
+            #             "title": "카드의 제목",
+            #             "description": "상세 설명",
+            #             "thumbnail": {
+            #                 "imageUrl":"https://cf.festa.io/img/2019-11-14/791369de-e762-4cc1-a341-68ce8c4a467f.png",
+            #                 "link": {
+            #                     "mobile": "https://naver.com",
+            #                     "android": "https:google.com"
+            #                 }
+            #             },
+            #             "buttons": [
+            #                 {
+            #                     # "label": "첫번째 버튼",
+            #                     # "action": "webLink",
+            #                     # "webLinkUrl": "https://portal.azure.com"
+            #                     "label": "010-2500-1925에 전화걸기",
+            #                     "action": "phone",
+            #                     "phoneNumber": "010-2054-3247"
+            #                 },
+            #                 {
+            #                     "label": "공유하기",
+            #                     "action": "share"
+            #                 }
+            #             ] 
+            #         }
+            #     }
+            # ]
         }
     }
     return jsonify(data)
