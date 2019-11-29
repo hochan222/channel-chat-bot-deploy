@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route("/test", methods=["GET"])
 
 def skill():
+    print(request.json)
     data = {
         "version": "2.0",
         "template": {
@@ -13,6 +14,10 @@ def skill():
                 {
                     "simpleText": {
                         "text": "간단한 텍스트 요소입니다."
+                    },
+                    "simpleImage": {
+                        "imageUrl": "https://cf.festa.io/img/2019-11-14/791369de-e762-4cc1-a341-68ce8c4a467f.png",
+                        "altText": "HUFS 로고"
                     }
                 }
             ]
