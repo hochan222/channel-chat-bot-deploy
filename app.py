@@ -34,6 +34,10 @@ def skill():
                                 "label": "010-2500-1925에 전화걸기",
                                 "action": "phone",
                                 "phoneNumber": "010-2054-3247"
+                            },
+                            {
+                                "label": "공유하기",
+                                "action": "share"
                             }
                         ] 
                     }
