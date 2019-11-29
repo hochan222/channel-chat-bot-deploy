@@ -29,7 +29,7 @@ def skill():
                         "buttons": [
                             {
                                 "label": "첫번째 버튼",
-                                "action": "message",
+                                "action": "webLink",
                                 "webLinkUrl": "https://portal.azure.com"
                             }
                         ] 
